@@ -1,0 +1,82 @@
+Keyboard Shortcut
+	AltGr (Right Alt);Switch between KO/EN
+	Right Ctrl;Hanja Convert
+Hangul
+	Symbol
+		Vowels
+			symbol;sound;name;keyboard pos
+				ㅣ;i;;232
+				ㅏ;a;;222
+				ㅑ;ya;;221
+				ㅓ;eo;;212
+				ㅕ;yeo;;211
+				ㅡ;eu;;213
+				ㅜ;u;;21-2
+				ㅠ;yu;;146
+				ㅗ;o;;21-1
+				ㅛ;yo;;210
+		Consonants
+			symbol;sound;name;keyboard pos;alternative symbol
+				ㄱ;g/k;기역;141;フ
+				ㄴ;n;니은;122
+				ㄷ;d/t;디귿;131
+				ㅁ;m;미음;112
+				ㅂ;b;비읍;111
+				ㅅ;s/t (end);시옷;144
+				ㅈ;j/ch;지읒;121;ス
+				ㅇ;-(start)/ng(end);이응;132
+				ㅎ;h;히읗;145;--o
+				ㄹ;r/l;리을;142
+		Double Consonants (Aspirated) (Puff of air in cavity, ㅎ)
+			ㅋ;k;키읔;113;ㄱ
+			ㅌ;t;티읕;123;ㄷ
+			ㅍ;p;피읖;143;ㅂ
+			ㅊ;ch;치읓;133;ㅈ
+		Double Consonants (Tense) (Hard)
+			symbol;romanisation;name;keyboard pos
+				ㄲ;gg/kk;쌍기역;141S;ㄱ
+				ㄸ;dd/tt;쌍디귿131S;ㄷ
+				ㅃ;bb/pp;쌍비읍;111S;ㅂ
+				ㅆ;ss;쌍시옷;144S;ㅅ
+				ㅉ;jj;쌍지읒;121S;ㅈ
+		Vowel Combinations
+			symbol;romanisation;sound;keyboard pos
+				2
+					ㅐ;ae;/ɛ/;231
+					ㅒ;yae, iae;;231S
+					ㅔ;e;/e/;241
+					ㅖ;ye, ie;;241S
+					3
+						ㅘ;wa
+						ㅟ;wi
+						ㅢ;wi
+						ㅝ;wo
+					4
+						ㅙ;wae;uae
+						ㅚ;oe;uae
+						ㅞ;we;uae
+			Archaic
+				ㅿ;half ㅅ sound;반시옷
+				ㆆ;half ㅇ sound
+				ㅸ;hard f
+				ㆁ;ng
+			Consonant Cluster
+				ㄶ;nh
+		Pronunciation
+			ㅎ+ㅇ;ㅎ silent
+			ㅎ+ㄱ,ㄷ,ㅂ,ㅈ or vice versa;ㅋ,ㅌ,ㅍ,ㅊ
+			ㅎ+ㄴ;ㄴ+ㄴ
+			ㅎ+ㅅ;ㅆ
+	Theory
+		Pronunciation
+			Hangul
+				Velar;ㄱ,ㅋ,ㄲ
+				Alveolar;ㄴ,ㄷ,ㅌ,ㄹ,ㄸ
+				Bilabial;ㅁ,ㅂ,ㅍ,ㅃ
+				Dental;ㅅ,ㅈ,ㅊ,ㅆ
+				Glottal;ㅇ,ㅎ
+			T-stops
+		Symbol
+			Combination
+				陰+陰/中, 陽+陽/中
+
