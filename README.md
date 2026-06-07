@@ -23,8 +23,8 @@ pip install pandas numpy
 
 ### Running the app
 ```sh
-git clone https://github.com/mightyrabbit99/anku.git
-cd anku
+git clone https://github.com/mightyrabbit99/anko.git
+cd anko
 python src/main.pyw
 ```
 ### Building the app
