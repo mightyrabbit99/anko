@@ -9,6 +9,7 @@ def Entry1(*args, **kwargs):
     widget.select_range(0, 'end')
     # move cursor to the end
     widget.icursor('end')
+    return 'break'
   ans = tk.Entry(*args, **kwargs)
   ans.bind('<Control-a>', lambda e: select_all(ans))
   return ans

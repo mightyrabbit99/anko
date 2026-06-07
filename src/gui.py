@@ -8,6 +8,8 @@ import traceback
 
 def show_error(self, *args):
   err = traceback.format_exception(*args)
+  with open("/tmp/anko_output.txt", "w") as f:
+    print(err, file=f)
   messagebox.showerror('Exception', err)
 
 tk.Tk.report_callback_exception = show_error
@@ -45,6 +47,8 @@ class GUI:
 
     window.bind('<Alt-F4>', lambda e: window.destroy())
 
+    window.bind('<Button-1>', lambda e: tab_control.popdown())
+    window.bind('<FocusOut>', lambda e: tab_control.popdown() if window.focus_get() is None else None)
     window.bind('<Control-Tab>', lambda e: tab_control.select_next_tab())
     window.bind('<Control-Shift-Tab>', lambda e: tab_control.select_prev_tab())
     window.bind('<Control-t>', lambda e: tab_control.add_new_content_tab())

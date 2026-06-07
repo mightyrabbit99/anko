@@ -71,6 +71,7 @@ class NotebookFrame(CNotebook):
   def render(self):
     self.tab_popup_menu.add_separator()
     self.popup_menu = tk.Menu(self, tearoff=0)
+    # self.popup_menu.bind('<FocusOut>', lambda e: self.popup_menu.unpost())
 
   def popup(self, event):
     if super().popup(event):
@@ -80,6 +81,10 @@ class NotebookFrame(CNotebook):
     finally:
       self.popup_menu.grab_release()
       return True
+
+  def popdown(self):
+    super().popdown()
+    self.popup_menu.unpost()
 
   def select_prev_tab(self):
     tab_id = self.select()

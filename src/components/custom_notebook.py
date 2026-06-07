@@ -16,8 +16,8 @@ class CustomNotebook(ttk.Notebook):
     self.tab_popup_menu = tk.Menu(self, tearoff=0)
     self.tab_popup_menu.add_command(
         label="Delete", command=self.del_tab)
+    # self.tab_popup_menu.bind('<FocusOut>', lambda e: self.tab_popup_menu.unpost())
     self.bind("<Button-3>", self.popup)
-    self.bind("<FocusOut>", lambda e: self.reset())
 
     self.dragged_tab_id = None
     self.bind("<ButtonPress-1>", self.on_drag_start)
@@ -45,6 +45,9 @@ class CustomNotebook(ttk.Notebook):
     finally:
       self.tab_popup_menu.grab_release()
       return True
+
+  def popdown(self):
+    self.tab_popup_menu.unpost()
 
   def on_drag_start(self, event):
     no = self.index("@%d,%d" % (event.x, event.y))
@@ -90,8 +93,10 @@ class CustomNotebook(ttk.Notebook):
       else:
         index = self.curr
         tab_id = self.tab_id(index)
+    else:
+      tab_id = self.tab_id(index)
     if len(self.tab_id_map_no) < 2: return
-    self.forget(index)
+    self.forget(tab_id)
     f = self.tab_id_map_frame[tab_id]
     del self.tab_id_map_frame[tab_id]
     del self.frame_id_map_tab_id[id(f)]

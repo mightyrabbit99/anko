@@ -183,6 +183,9 @@ class PrompterActionHandler(ActionHandler):
       return
     if t is None:
       t = self.frame_controller.get_title().strip()
+    t_old = self.tab_controller.get_title()
+    if t_old is None:
+      return
     t_old = self.tab_controller.get_title().strip()
     if t != t_old:
       self.tab_controller.set_title(t)
